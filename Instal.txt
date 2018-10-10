@@ -1,0 +1,10 @@
+nuke.pluginAddPath('./icons/Franklin');
+nuke.pluginAddPath('./gizmos/Franklin');
+
+toolbar = nuke.toolbar("Nodes")
+F_menu = toolbar.addMenu("Franklin", icon="F_menu.png")
+
+# Add just the falawing 2 lines if you previously add the menu
+
+F_menu.addMenu( '3D', icon='F_3D.png' )
+F_menu.addCommand( '3D/P_Mask', "nuke.createNode(\"P_Mask\")" ,icon="F_pmask.png")
